@@ -13,6 +13,8 @@ document.getElementById('btn').addEventListener('click', async () => {
 });
 function delayMessage(ms) {
 return new Promise((res)=>{
-setTimeout(res(),ms);
+setTimeout(()=>{
+res("resolve done");
+},ms);
 })
 }
